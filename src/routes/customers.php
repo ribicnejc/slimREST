@@ -58,10 +58,6 @@ $app->get('/api/customer/{id}', function (Request $request, Response $response) 
 
 // Add Customer
 $app->post('/api/customer/add', function (Request $request, Response $response) {
-
-
-//    print_r($request->getParams());
-//    print_r($request->getParsedBodyParam("first_name"));
     $first_name = $request->getParam('first_name');
     $last_name = $request->getParam("last_name");
     $phone = $request->getParam("phone");
